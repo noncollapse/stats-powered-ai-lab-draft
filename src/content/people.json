@@ -1,0 +1,75 @@
+[
+  {
+    "slug": "chengchun-shi",
+    "name": "Chengchun Shi",
+    "role": "Lab Leader",
+    "affiliation": "London School of Economics and Political Science",
+    "bio": "Associate Professor of Data Science at LSE. His research spans large language models, reinforcement learning, and statistics.",
+    "interests": ["Large Language Models", "Reinforcement Learning", "Statistics"],
+    "links": [
+      { "label": "Personal website", "url": "https://callmespring.github.io/" }
+    ],
+    "draft": false
+  },
+  {
+    "slug": "kai-ye",
+    "name": "Kai Ye",
+    "role": "Research Member · PhD Student",
+    "affiliation": "Department of Statistics, LSE",
+    "bio": "PhD student at LSE working on offline reinforcement learning, confounded partially observable Markov decision processes, and high-dimensional statistics.",
+    "interests": ["Offline Reinforcement Learning", "POMDPs", "High-dimensional Statistics"],
+    "links": [
+      { "label": "Personal website", "url": "https://noncollapse.github.io/" },
+      { "label": "LSE profile", "url": "https://www.lse.ac.uk/people/kai-ye" }
+    ],
+    "draft": false
+  },
+  {
+    "slug": "hongyi-zhou",
+    "name": "Hongyi Zhou",
+    "role": "Research Member",
+    "affiliation": "Tsinghua University",
+    "bio": "Researcher at Tsinghua University working on reinforcement learning and large language models.",
+    "interests": ["Reinforcement Learning", "Large Language Models"],
+    "links": [
+      { "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=r6TXQZ0AAAAJ&hl=en" }
+    ],
+    "draft": false
+  },
+  {
+    "slug": "jin-zhu",
+    "name": "Jin Zhu",
+    "role": "Research Member · Assistant Professor",
+    "affiliation": "School of Mathematics, University of Birmingham",
+    "bio": "Assistant Professor whose research focuses on large language models, reinforcement learning, and high-dimensional statistics, particularly computationally efficient methods with statistical guarantees.",
+    "interests": ["Large Language Models", "Reinforcement Learning", "High-dimensional Statistics"],
+    "links": [
+      { "label": "Personal website", "url": "https://mamba413.github.io/" }
+    ],
+    "draft": false
+  },
+  {
+    "slug": "shijin-gong",
+    "name": "Shijin Gong",
+    "role": "Research Member · PhD Student",
+    "affiliation": "University of Science and Technology of China",
+    "bio": "PhD student at the University of Science and Technology of China. Publications and current academic information are linked through OpenReview.",
+    "interests": [],
+    "links": [
+      { "label": "OpenReview profile", "url": "https://openreview.net/profile?id=~Shijin_Gong1" }
+    ],
+    "draft": false
+  },
+  {
+    "slug": "erhan-xu",
+    "name": "Erhan Xu",
+    "role": "Research Member · PhD Student",
+    "affiliation": "Department of Statistics, LSE",
+    "bio": "PhD student at LSE working at the intersection of reinforcement learning and large language models, with a focus on statistically principled alignment and post-training of reasoning models.",
+    "interests": ["LLM Alignment", "Reasoning Models", "Reinforcement Learning", "Causal Inference"],
+    "links": [
+      { "label": "LSE profile", "url": "https://www.lse.ac.uk/people/erhan-xu" }
+    ],
+    "draft": false
+  }
+]

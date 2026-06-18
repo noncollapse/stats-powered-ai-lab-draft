@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "basis-single-rollout-llm-reasoning",
+    "title": "BASIS: Batchwise Advantage Estimation from Single-Rollout Information Sharing for LLM Reasoning",
+    "authors": ["Shijin Gong", "Erhan Xu", "Kai Ye", "Francesco Quinzan", "Giulia Livieri", "Chengchun Shi"],
+    "year": 2026,
+    "abstract": "Reinforcement learning with verifiable rewards has become a standard recipe for improving the reasoning abilities of large language models. Existing algorithms face a tradeoff between computational efficiency and sample efficiency in value estimation and policy learning. We introduce BASIS, a critic-free post-training algorithm designed to address this tradeoff. At each online training step, BASIS samples only one rollout per prompt, but leverages rich information across prompts in the entire batch to improve value function estimation. Our experiments demonstrate that BASIS reduces MSE in value function estimation by 69% compared to REINFORCE++, a representative single-rollout baseline, and achieves lower MSE with one rollout than group mean estimators with 8 rollouts. This improvement in value estimation translates to better policy optimization: using substantially less training time, BASIS achieves performance close to multi-rollout GRPO-type baselines and often outperforms single-rollout REINFORCE-type baselines.",
+    "topics": ["Policy Learning", "LLM Reasoning", "Advantage Estimation"],
+    "arxivId": "2605.27293",
+    "pdfUrl": "https://arxiv.org/pdf/2605.27293",
+    "featured": true,
+    "draft": false
+  },
+  {
+    "slug": "reader-reasoning-enhanced-detection",
+    "title": "READER: Reasoning-Enhanced AI-Generated Text Detection",
+    "authors": ["Pingfan Su", "Kai Ye", "Shijin Gong", "Erhan Xu", "Jin Zhu", "Giulia Livieri", "Chengchun Shi"],
+    "year": 2026,
+    "abstract": "Recent advances in large language models (LLMs) have made it increasingly difficult to distinguish human-written text from AI-generated content. Many existing detectors train supervised neural classifiers that achieve strong in-distribution performance but are often opaque and can degrade substantially under distribution shift. We present READER, a reasoning-enhanced AI text detector that outputs both a human/AI label and a structured rationale describing the evidence for its decision. A key component of our approach is READ, a curated supervision set of rationales and verdicts. We fine-tune an LLM on READ to build READER, which reasons before detecting at inference time. Despite having only 1.5B parameters, READER consistently outperforms existing detectors as well as prompted, high-capacity LLM baselines (GPT-5.2, Gemini-3-Pro, and DeepSeek-V3.2), which are 100 to 1000 times larger in scale.",
+    "topics": ["AIGC Detection", "Reasoning", "Language Models"],
+    "arxivId": "2605.25281",
+    "pdfUrl": "https://arxiv.org/pdf/2605.25281",
+    "featured": true,
+    "draft": false
+  },
+  {
+    "slug": "kernelized-advantage-estimation",
+    "title": "Kernelized Advantage Estimation: From Nonparametric Statistics to LLM Reasoning",
+    "authors": ["Shijin Gong", "Kai Ye", "Jin Zhu", "Xinyu Zhang", "Hongyi Zhou", "Chengchun Shi"],
+    "year": 2026,
+    "abstract": "Recent advances in large language models (LLMs) have increasingly relied on reinforcement learning (RL) to improve their reasoning capabilities. Three types of approaches have been widely adopted: the first relies on a deep neural network to estimate the value function of the learning policy in order to reduce the variance of the policy gradient, but maintaining such a network incurs substantial computational and memory overhead. The second avoids training a value network by approximating the value function using sample averages, but requires many reasoning traces per prompt. The third samples only a single reasoning trajectory per prompt, reducing computational cost but suffering from poor sample efficiency. This paper focuses on a resource-constrained setting in which only a small number of reasoning traces can be sampled per prompt. We bring classical nonparametric statistical methods to LLM reasoning and employ kernel smoothing for value function estimation and subsequent policy optimization. Numerical and theoretical results demonstrate accurate value and gradient estimation, leading to improved policy optimization.",
+    "topics": ["Policy Learning", "Nonparametric Statistics", "LLM Reasoning"],
+    "arxivId": "2604.28005",
+    "pdfUrl": "https://arxiv.org/pdf/2604.28005",
+    "featured": true,
+    "draft": false
+  },
+  {
+    "slug": "grpo-u-statistic",
+    "title": "Demystifying Group Relative Policy Optimization: Its Policy Gradient is a U-Statistic",
+    "authors": ["Hongyi Zhou", "Kai Ye", "Erhan Xu", "Jin Zhu", "Ying Yang", "Shijin Gong", "Chengchun Shi"],
+    "year": 2026,
+    "abstract": "Group relative policy optimization (GRPO), a core methodological component of DeepSeekMath and DeepSeek-R1, has emerged as a cornerstone for scaling reasoning capabilities of large language models. Despite its widespread adoption and the proliferation of follow-up works, the theoretical properties of GRPO remain less studied. This paper provides a unified framework to understand GRPO through the lens of classical U-statistics. We demonstrate that the GRPO policy gradient is inherently a U-statistic, allowing us to characterize its mean squared error, derive a finite-sample error bound and the asymptotic distribution of the suboptimality gap for its learned policy. Our findings reveal that GRPO is asymptotically equivalent to an oracle policy gradient algorithm and achieves asymptotically optimal performance within a broad class of policy gradient algorithms. We also establish a universal scaling law that offers principled guidance for selecting the optimal group size.",
+    "topics": ["Policy Learning", "GRPO", "U-Statistics"],
+    "arxivId": "2603.01162",
+    "pdfUrl": "https://arxiv.org/pdf/2603.01162",
+    "featured": false,
+    "draft": false
+  },
+  {
+    "slug": "difference-in-difference-ai-images",
+    "title": "A Difference-in-Difference Approach to Detecting AI-Generated Images",
+    "authors": ["Xinyi Qi", "Kai Ye", "Chengchun Shi", "Ying Yang", "Hongyi Zhou", "Jin Zhu"],
+    "year": 2026,
+    "abstract": "Diffusion models are able to produce AI-generated images that are almost indistinguishable from real ones. This raises concerns about their potential misuse and poses substantial challenges for detecting them. Many existing detectors rely on reconstruction error—the difference between the input image and its reconstructed version—as the basis for distinguishing real from fake images. However, these detectors become less effective as modern AI-generated images become increasingly similar to real ones. To address this challenge, we propose a novel difference-in-difference method. Instead of directly using the reconstruction error, a first-order difference, we compute the difference in reconstruction error, a second-order difference, for variance reduction and improved detection accuracy. Extensive experiments demonstrate strong generalization performance, enabling reliable detection of AI-generated images in the era of generative AI.",
+    "topics": ["AIGC Detection", "Computer Vision", "Diffusion Models"],
+    "arxivId": "2602.23732",
+    "pdfUrl": "https://arxiv.org/pdf/2602.23732",
+    "featured": false,
+    "draft": false
+  },
+  {
+    "slug": "learn-to-distance",
+    "title": "Learn-to-Distance: Distance Learning for Detecting LLM-Generated Text",
+    "authors": ["Hongyi Zhou", "Jin Zhu", "Kai Ye", "Ying Yang", "Erhan Xu", "Chengchun Shi"],
+    "year": 2026,
+    "abstract": "Modern large language models (LLMs) such as GPT, Claude, and Gemini have transformed the way we learn, work, and communicate. Yet their ability to produce highly human-like text raises serious concerns about misinformation and academic integrity, making reliable algorithms for detecting LLM-generated content urgently needed. We present a geometric approach to demystify rewrite-based detection algorithms, revealing their underlying rationale and demonstrating their generalization ability. Building on this insight, we introduce a rewrite-based detection algorithm that adaptively learns the distance between the original and rewritten text. Theoretically, we demonstrate that an adaptively learned distance function is more effective for detection than a fixed distance. Across more than 100 experimental settings, the approach demonstrates superior performance over baseline algorithms in the majority of scenarios.",
+    "topics": ["AIGC Detection", "Language Models", "Distance Learning"],
+    "arxivId": "2601.21895",
+    "pdfUrl": "https://arxiv.org/pdf/2601.21895",
+    "featured": false,
+    "draft": false
+  },
+  {
+    "slug": "adadetectgpt-statistical-guarantees",
+    "title": "AdaDetectGPT: Adaptive Detection of LLM-Generated Text with Statistical Guarantees",
+    "authors": ["Hongyi Zhou", "Jin Zhu", "Pingfan Su", "Kai Ye", "Ying Yang", "Shakeel A O B Gavioli-Akilagun", "Chengchun Shi"],
+    "year": 2025,
+    "abstract": "We study the problem of determining whether a piece of text has been authored by a human or by a large language model (LLM). Existing state-of-the-art logits-based detectors use statistics derived from the log-probability of the observed text evaluated with a source LLM, but relying solely on log probabilities can be sub-optimal. We introduce AdaDetectGPT, a classifier that adaptively learns a witness function from training data to enhance logits-based detectors. We provide statistical guarantees on its true positive, false positive, true negative, and false negative rates. Extensive numerical studies show that AdaDetectGPT nearly uniformly improves the state-of-the-art method across combinations of datasets and LLMs, with improvements reaching up to 58%.",
+    "topics": ["AIGC Detection", "Statistical Guarantees", "Language Models"],
+    "arxivId": "2510.01268",
+    "pdfUrl": "https://arxiv.org/pdf/2510.01268",
+    "featured": false,
+    "draft": false
+  },
+  {
+    "slug": "doubly-robust-alignment",
+    "title": "Doubly Robust Alignment for Large Language Models",
+    "authors": ["Erhan Xu", "Kai Ye", "Hongyi Zhou", "Luhan Zhu", "Francesco Quinzan", "Chengchun Shi"],
+    "year": 2025,
+    "abstract": "This paper studies reinforcement learning from human feedback (RLHF) for aligning large language models with human preferences. Many algorithms are highly sensitive to misspecifications in the underlying preference model, the reference policy, or the reward function, resulting in undesirable fine-tuning. To address model misspecification, we propose a doubly robust preference optimization algorithm that remains consistent when either the preference model or the reference policy is correctly specified, without requiring both. The proposal demonstrates superior and more robust performance than state-of-the-art algorithms, both in theory and in practice.",
+    "topics": ["Policy Learning", "LLM Alignment", "RLHF"],
+    "arxivId": "2506.01183",
+    "pdfUrl": "https://arxiv.org/pdf/2506.01183",
+    "featured": false,
+    "draft": false
+  },
+  {
+    "slug": "robust-rlhf-finetuning",
+    "title": "Robust Reinforcement Learning from Human Feedback for Large Language Models Fine-Tuning",
+    "authors": ["Kai Ye", "Hongyi Zhou", "Jin Zhu", "Francesco Quinzan", "Chengchun Shi"],
+    "year": 2025,
+    "abstract": "Reinforcement learning from human feedback (RLHF) has emerged as a key technique for aligning the output of large language models with human preferences. Most existing RLHF algorithms use the Bradley-Terry model to learn the reward function, relying on assumptions that may not reflect the complexity and variability of real-world judgments. We propose a robust algorithm to enhance existing approaches under reward-model misspecification. Theoretically, the algorithm reduces the variance of reward and policy estimators, leading to improved regret bounds. Empirical evaluations on LLM benchmark datasets demonstrate consistent improvements, with 77–81% of responses favored over baselines on the Anthropic Helpful and Harmless dataset.",
+    "topics": ["Policy Learning", "RLHF", "Robust Statistics"],
+    "arxivId": "2504.03784",
+    "pdfUrl": "https://arxiv.org/pdf/2504.03784",
+    "featured": false,
+    "draft": false
+  }
+]

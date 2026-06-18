@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "policy-learning-for-llms",
+    "index": "01",
+    "title": "Policy Learning for LLMs",
+    "eyebrow": "Reliable reasoning and alignment",
+    "summary": "We study statistically principled policy-learning methods for large language models, with an emphasis on reasoning, alignment, feedback, and computational efficiency.",
+    "question": "How can policy optimisation improve LLM reasoning and alignment without hiding instability, misspecification, or excessive sampling cost?",
+    "approach": "The programme examines policy gradients, reinforcement learning from feedback, value and advantage estimation, and robust preference optimisation. Statistical structure is used to expose where an estimator gains efficiency and where its assumptions can fail.",
+    "themes": ["LLM reasoning", "Policy optimisation", "RLHF", "Robust alignment"],
+    "relatedPublications": ["basis-single-rollout-llm-reasoning", "kernelized-advantage-estimation", "grpo-u-statistic", "doubly-robust-alignment", "robust-rlhf-finetuning"],
+    "status": "Active research direction",
+    "draft": false
+  },
+  {
+    "slug": "aigc-detection",
+    "index": "02",
+    "title": "AIGC Detection",
+    "eyebrow": "Evidence for synthetic content",
+    "summary": "We develop statistically grounded ways to identify AI-generated text, images, and mixed-media content across changing generators and real-world distribution shifts.",
+    "question": "How can a detector remain useful when generators, domains, languages, and adversarial strategies keep changing?",
+    "approach": "The programme connects hypothesis testing, representation learning, calibration, and interpretable evidence. The aim is not merely to return a score, but to make uncertainty and the basis for a decision inspectable.",
+    "themes": ["Text provenance", "Image forensics", "Distribution shift", "Calibrated evidence"],
+    "relatedPublications": ["reader-reasoning-enhanced-detection", "learn-to-distance", "difference-in-difference-ai-images", "adadetectgpt-statistical-guarantees"],
+    "status": "Active research direction",
+    "draft": false
+  },
+  {
+    "slug": "frontiers-in-statistics",
+    "index": "03",
+    "title": "Frontiers in Statistics",
+    "eyebrow": "New theory for new systems",
+    "summary": "We pursue foundational statistical questions created by modern AI, connecting classical inference with high-dimensional, sequential, causal, and adaptive systems.",
+    "question": "Which new statistical objects and guarantees are needed when data, models, and decisions continuously interact?",
+    "approach": "This direction develops theory and methodology across statistical learning, causal inference, experimental design, U-statistics, and high-dimensional problems, with modern AI systems providing both motivation and stress tests.",
+    "themes": ["Statistical inference", "Causal methods", "Experimental design", "High-dimensional statistics"],
+    "relatedPublications": [],
+    "status": "Foundational research direction",
+    "draft": false
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "research-blog",
+    "title": "Research Blog",
+    "type": "Blog",
+    "summary": "Technical notes, research explainers, and careful commentary from the lab. Posts will connect ideas to papers, methods, and open questions.",
+    "draft": false
+  },
+  {
+    "slug": "seminar-series",
+    "title": "Seminar Series",
+    "type": "Seminar",
+    "summary": "A forum for talks, reading discussions, and works in progress across statistics and modern AI. Schedules and archives will appear here.",
+    "draft": false
+  }
+]

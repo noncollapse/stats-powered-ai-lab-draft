@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Stats-Powered AI Lab">
+  <rect width="1200" height="630" fill="#050706"/>
+  <g stroke="#173a2d" stroke-width="1" opacity=".55">
+    <path d="M0 105h1200M0 210h1200M0 315h1200M0 420h1200M0 525h1200"/>
+    <path d="M150 0v630M300 0v630M450 0v630M600 0v630M750 0v630M900 0v630M1050 0v630"/>
+  </g>
+  <path d="M0 365h420c80 0 92-140 172-140s94 210 170 210 95-110 180-110h258" fill="none" stroke="#58b98e" stroke-width="7"/>
+  <text x="80" y="160" fill="#dbe8e2" font-family="Arial, sans-serif" font-size="74" font-weight="700">STATS-POWERED</text>
+  <text x="80" y="245" fill="#9bb9ad" font-family="Arial, sans-serif" font-size="74" font-weight="700">AI LAB</text>
+  <text x="84" y="540" fill="#6f8d81" font-family="monospace" font-size="24">EVIDENCE, NOT INSTINCT.</text>
+</svg>
