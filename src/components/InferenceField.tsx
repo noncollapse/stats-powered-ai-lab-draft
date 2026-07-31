@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import { pick, useLanguage } from '../i18n/LanguageContext'
 
 type Node = { x: number; y: number; vx: number; vy: number; group: number; phase: number }
 
@@ -10,6 +11,7 @@ const mulberry32 = (seed: number) => () => {
 }
 
 export default function InferenceField() {
+  const { language } = useLanguage()
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
@@ -160,9 +162,9 @@ export default function InferenceField() {
   return (
     <div className="inference-field" aria-hidden="true">
       <canvas ref={canvasRef} />
-      <div className="inference-field__label inference-field__label--one"><span>01</span> LLM Policy</div>
-      <div className="inference-field__label inference-field__label--two"><span>02</span> Detection</div>
-      <div className="inference-field__label inference-field__label--three"><span>03</span> Statistics</div>
+      <div className="inference-field__label inference-field__label--one"><span>01</span> {pick(language, 'Statistical Foundation', '统计基础')}</div>
+      <div className="inference-field__label inference-field__label--two"><span>02</span> {pick(language, 'Model Diagnosis', '模型诊断')}</div>
+      <div className="inference-field__label inference-field__label--three"><span>03</span> {pick(language, 'Robust Policy Optimization', '稳健策略优化')}</div>
     </div>
   )
 }

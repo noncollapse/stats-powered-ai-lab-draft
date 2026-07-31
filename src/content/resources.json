@@ -2,15 +2,21 @@
   {
     "slug": "research-blog",
     "title": "Research Blog",
+    "titleZh": "研究博客",
     "type": "Blog",
+    "typeZh": "博客",
     "summary": "Technical notes, research explainers, and careful commentary from the lab. Posts will connect ideas to papers, methods, and open questions.",
+    "summaryZh": "实验室发布的技术笔记、研究解读与严谨评论，将观点与论文、方法和开放问题连接起来。",
     "draft": false
   },
   {
     "slug": "seminar-series",
     "title": "Seminar Series",
+    "titleZh": "研讨会系列",
     "type": "Seminar",
+    "typeZh": "研讨会",
     "summary": "A forum for talks, reading discussions, and works in progress across statistics and modern AI. Schedules and archives will appear here.",
+    "summaryZh": "面向统计学与现代 AI 的学术报告、论文讨论和进行中工作交流平台，日程与往期内容将在此发布。",
     "draft": false
   }
 ]

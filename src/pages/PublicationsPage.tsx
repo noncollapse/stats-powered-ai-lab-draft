@@ -6,8 +6,10 @@ import PageHero from '../components/PageHero'
 import PublicationCard from '../components/PublicationCard'
 import Seo from '../components/Seo'
 import { publications } from '../content'
+import { pick, useLanguage } from '../i18n/LanguageContext'
 
 export default function PublicationsPage() {
+  const { language } = useLanguage()
   const [query, setQuery] = useState('')
   const filtered = useMemo(() => {
     const normalized = query.trim().toLowerCase()
@@ -22,35 +24,43 @@ export default function PublicationsPage() {
   const categories = [
     {
       index: '01',
-      title: 'Policy Learning for LLMs',
-      description: 'Reasoning, alignment, feedback, and efficient post-training.',
+      title: pick(language, 'Policy Learning & Decision Systems', '策略学习与决策系统'),
+      description: pick(language, 'LLM alignment, policy evaluation, offline RL, and safe decisions.', '大模型对齐、策略评估、离线强化学习与安全决策。'),
       to: '/research/policy-learning-for-llms',
     },
     {
       index: '02',
-      title: 'AIGC Detection',
-      description: 'Detection across generated text, images, and distribution shifts.',
+      title: pick(language, 'AI Verification & AIGC Detection', 'AI 验证与 AIGC 检测'),
+      description: pick(language, 'AIGC provenance and reasoning faithfulness, with calibrated and causal verification.', 'AIGC 溯源与推理忠实性，以及校准和因果验证。'),
       to: '/research/aigc-detection',
     },
     {
       index: '03',
-      title: 'Frontiers in Statistics',
-      description: 'New statistical theory and methods for modern AI systems.',
+      title: pick(language, 'Frontiers in Statistics', '前沿统计'),
+      description: pick(language, 'Classical inference for high-dimensional, sequential, causal, and adaptive AI systems.', '面向高维、序列、因果及自适应 AI 系统的经典推断。'),
       to: '/research/frontiers-in-statistics',
     },
   ]
 
   return (
     <>
-      <Seo title="Paper Bank" description="The research paper bank of Stats-Powered AI Lab." path="/publications" />
+      <Seo
+        title={pick(language, 'Paper Bank', '论文库')}
+        description={pick(language, 'The research paper bank of Stats-Powered AI Lab.', '思达 AI Lab 的研究论文库。')}
+        path="/publications"
+      />
       <PageHero
         index="02"
-        eyebrow="Paper bank"
-        title="A structured bank of research papers."
-        description="Enter through one of our three research programmes, or search the complete collection by title, author, or topic."
+        eyebrow={pick(language, 'Paper bank', '论文库')}
+        title={pick(language, 'A structured bank of research papers.', '结构化研究论文库。')}
+        description={pick(
+          language,
+          'Enter through one of our three research layers, or search the complete collection by title, author, or topic. Paper titles and abstracts remain in their original English.',
+          '可从三个研究层进入，或按标题、作者和主题搜索全部论文。论文标题与摘要保留英文原文。',
+        )}
       />
       <section className="container-shell publication-browser">
-        <nav className="paper-bank-categories" aria-label="Paper Bank research categories">
+        <nav className="paper-bank-categories" aria-label={pick(language, 'Paper Bank research categories', '论文库研究分类')}>
           {categories.map((category) => (
             <Link key={category.to} className="paper-bank-category" to={category.to}>
               <span className="paper-bank-category__index">{category.index}</span>
@@ -64,15 +74,27 @@ export default function PublicationsPage() {
         </nav>
         <div className="publication-controls">
           <label>
-            <span>Search the Paper Bank</span>
-            <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Title, author, or topic" type="search" />
+            <span>{pick(language, 'Search the Paper Bank', '搜索论文库')}</span>
+            <input
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder={pick(language, 'Title, author, or topic', '标题、作者或主题')}
+              type="search"
+            />
           </label>
         </div>
-        <div className="registry-count"><span>{String(filtered.length).padStart(2, '0')} records</span><span>Source: Google Scholar & arXiv</span></div>
+        <div className="registry-count">
+          <span>{String(filtered.length).padStart(2, '0')} {pick(language, 'records', '条记录')}</span>
+          <span>{pick(language, 'Source', '来源')}: Google Scholar & arXiv</span>
+        </div>
         <div className="publication-list">
           {filtered.length ? filtered.map((publication, index) => (
             <PublicationCard key={publication.slug} publication={publication} index={index} />
-          )) : <EmptyState index="∅" title="No papers match" body="Try a broader title, author name, or research topic." />}
+          )) : <EmptyState
+            index="∅"
+            title={pick(language, 'No papers match', '没有匹配的论文')}
+            body={pick(language, 'Try a broader title, author name, or research topic.', '请尝试更宽泛的标题、作者姓名或研究主题。')}
+          />}
         </div>
       </section>
     </>

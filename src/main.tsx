@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router'
 import App from './App'
+import { LanguageProvider } from './i18n/LanguageProvider'
 import './index.css'
 
 const basename = import.meta.env.BASE_URL === '/'
@@ -10,8 +11,10 @@ const basename = import.meta.env.BASE_URL === '/'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename={basename}>
-      <App />
-    </BrowserRouter>
+    <LanguageProvider>
+      <BrowserRouter basename={basename}>
+        <App />
+      </BrowserRouter>
+    </LanguageProvider>
   </StrictMode>,
 )

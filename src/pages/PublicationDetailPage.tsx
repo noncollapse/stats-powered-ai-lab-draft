@@ -2,9 +2,11 @@ import { Link, useParams } from 'react-router'
 import Arrow from '../components/Arrow'
 import Seo from '../components/Seo'
 import { publicationBySlug } from '../content'
+import { pick, useLanguage } from '../i18n/LanguageContext'
 import NotFoundPage from './NotFoundPage'
 
 export default function PublicationDetailPage() {
+  const { language } = useLanguage()
   const { slug } = useParams()
   const publication = publicationBySlug(slug)
   if (!publication) return <NotFoundPage />
@@ -28,12 +30,12 @@ export default function PublicationDetailPage() {
         }}
       />
       <article className="detail-page container-shell publication-detail">
-        <Link className="back-link" to="/publications"><Arrow direction="left" /> Paper Bank</Link>
+        <Link className="back-link" to="/publications"><Arrow direction="left" /> {pick(language, 'Paper Bank', '论文库')}</Link>
         <header className="detail-header">
           <div className="detail-header__meta">
-            <span>Year {publication.year}</span>
+            <span>{pick(language, 'Year', '年份')} {publication.year}</span>
             <span>arXiv:{publication.arxivId}</span>
-            <a className="publication-detail__pdf" href={publication.pdfUrl} target="_blank" rel="noreferrer">View PDF ↗</a>
+            <a className="publication-detail__pdf" href={publication.pdfUrl} target="_blank" rel="noreferrer">{pick(language, 'View PDF', '查看 PDF')} ↗</a>
           </div>
           <h1>{publication.title}</h1>
           <p className="publication-detail__authors">
@@ -43,15 +45,15 @@ export default function PublicationDetailPage() {
 
         <div className="detail-grid">
           <aside>
-            <span>Topics</span>
+            <span>{pick(language, 'Topics', '主题')}</span>
             <ul>{publication.topics.map((topic) => <li key={topic}>{topic}</li>)}</ul>
           </aside>
           <div className="detail-copy">
             <section>
-              <span className="section-kicker">Abstract</span>
+              <span className="section-kicker">{pick(language, 'Abstract', '英文摘要')}</span>
               <p>{publication.abstract}</p>
               <a className="abstract-full-text" href={publication.pdfUrl} target="_blank" rel="noreferrer">
-                Full text <Arrow />
+                {pick(language, 'Full text', '查看全文')} <Arrow />
               </a>
             </section>
           </div>

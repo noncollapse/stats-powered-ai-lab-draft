@@ -41,6 +41,36 @@ for (const collection of collections) {
       if (!item.arxivId) errors.push(`${location} needs an arXiv identifier.`)
       if (!item.pdfUrl) errors.push(`${location} needs an arXiv PDF URL.`)
     }
+
+    if (collection === 'research' && !item.draft) {
+      for (const field of ['titleZh', 'eyebrowZh', 'summaryZh', 'questionZh', 'approachZh', 'statusZh']) {
+        if (!item[field]) errors.push(`${location} needs bilingual field "${field}".`)
+      }
+      if (!Array.isArray(item.themesZh)) errors.push(`${location} needs bilingual research themes.`)
+    }
+
+    if (collection === 'people' && !item.draft) {
+      for (const field of ['roleZh', 'affiliationZh', 'bioZh']) {
+        if (!item[field]) errors.push(`${location} needs bilingual field "${field}".`)
+      }
+      if (!Array.isArray(item.interestsZh)) errors.push(`${location} needs bilingual research interests.`)
+      if (!Array.isArray(item.links) || item.links.some((link) => !link.labelZh)) {
+        errors.push(`${location} needs bilingual link labels.`)
+      }
+    }
+
+    if (collection === 'resources' && !item.draft) {
+      for (const field of ['titleZh', 'typeZh', 'summaryZh']) {
+        if (!item[field]) errors.push(`${location} needs bilingual field "${field}".`)
+      }
+    }
+
+    if (collection === 'news' && !item.draft) {
+      for (const field of ['titleZh', 'summaryZh']) {
+        if (!item[field]) errors.push(`${location} needs bilingual field "${field}".`)
+      }
+      if (!Array.isArray(item.bodyZh)) errors.push(`${location} needs a bilingual article body.`)
+    }
   }
 }
 

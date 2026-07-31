@@ -2,12 +2,17 @@
   {
     "slug": "chengchun-shi",
     "name": "Chengchun Shi",
-    "role": "Lab Leader",
-    "affiliation": "London School of Economics and Political Science",
-    "bio": "Associate Professor of Data Science at LSE. His research spans large language models, reinforcement learning, and statistics.",
-    "interests": ["Large Language Models", "Reinforcement Learning", "Statistics"],
+    "role": "Lab Leader · Associate Professor",
+    "roleZh": "实验室负责人 · 副教授",
+    "affiliation": "Department of Statistics, London School of Economics and Political Science",
+    "affiliationZh": "伦敦政治经济学院统计系",
+    "bio": "Associate Professor in LSE's Department of Statistics. His research connects statistics with large language models and reinforcement learning. He is a recipient of the Peter Gavin Hall IMS Early Career Prize, the IMS Tweedie Award, and the Royal Statistical Society Research Prize.",
+    "bioZh": "伦敦政治经济学院统计系副教授，研究聚焦统计学与大语言模型、强化学习的交叉。曾获 Peter Gavin Hall IMS Early Career Prize、IMS Tweedie Award 与英国皇家统计学会 Research Prize。",
+    "interests": ["Large Language Models", "Reinforcement Learning", "Statistical Learning", "Trustworthy AI"],
+    "interestsZh": ["大语言模型", "强化学习", "统计学习", "可信人工智能"],
     "links": [
-      { "label": "Personal website", "url": "https://callmespring.github.io/" }
+      { "label": "Personal website", "labelZh": "个人主页", "url": "https://callmespring.github.io/" },
+      { "label": "Google Scholar", "labelZh": "Google Scholar", "url": "https://scholar.google.com/citations?user=dDGy3N0AAAAJ&hl=en" }
     ],
     "draft": false
   },
@@ -15,24 +20,32 @@
     "slug": "kai-ye",
     "name": "Kai Ye",
     "role": "Research Member · PhD Student",
-    "affiliation": "Department of Statistics, LSE",
-    "bio": "PhD student at LSE working on offline reinforcement learning, confounded partially observable Markov decision processes, and high-dimensional statistics.",
-    "interests": ["Offline Reinforcement Learning", "POMDPs", "High-dimensional Statistics"],
+    "roleZh": "研究成员 · 博士生",
+    "affiliation": "Department of Statistics, London School of Economics and Political Science",
+    "affiliationZh": "伦敦政治经济学院统计系",
+    "bio": "Fully funded PhD student in LSE's Department of Statistics. His research spans artificial intelligence, large language models, computer vision, and reinforcement learning, with current work on policy optimisation and partially observable settings.",
+    "bioZh": "伦敦政治经济学院统计系全额资助博士生，研究横跨人工智能、大语言模型、计算机视觉与强化学习，当前重点关注策略优化与部分可观测环境。",
+    "interests": ["Artificial Intelligence", "Large Language Models", "Computer Vision", "Reinforcement Learning"],
+    "interestsZh": ["人工智能", "大语言模型", "计算机视觉", "强化学习"],
     "links": [
-      { "label": "Personal website", "url": "https://noncollapse.github.io/" },
-      { "label": "LSE profile", "url": "https://www.lse.ac.uk/people/kai-ye" }
+      { "label": "Personal website", "labelZh": "个人主页", "url": "https://noncollapse.github.io/" },
+      { "label": "Google Scholar", "labelZh": "Google Scholar", "url": "https://scholar.google.com/citations?user=a7G8Yo8AAAAJ&hl=en" }
     ],
     "draft": false
   },
   {
     "slug": "hongyi-zhou",
     "name": "Hongyi Zhou",
-    "role": "Research Member",
-    "affiliation": "Tsinghua University",
-    "bio": "Researcher at Tsinghua University working on reinforcement learning and large language models.",
-    "interests": ["Reinforcement Learning", "Large Language Models"],
+    "role": "Research Member · Assistant Professor",
+    "roleZh": "研究成员 · 助理教授",
+    "affiliation": "School of Statistics and Data Science, Shanghai University of Finance and Economics",
+    "affiliationZh": "上海财经大学统计与数据科学学院",
+    "bio": "Assistant Professor at Shanghai University of Finance and Economics. His research spans classical statistics, reinforcement learning, large language models, and world models.",
+    "bioZh": "上海财经大学助理教授，研究方向涵盖经典统计学、强化学习、大语言模型与世界模型。",
+    "interests": ["Classical Statistics", "Reinforcement Learning", "Large Language Models", "World Models"],
+    "interestsZh": ["经典统计学", "强化学习", "大语言模型", "世界模型"],
     "links": [
-      { "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=r6TXQZ0AAAAJ&hl=en" }
+      { "label": "Google Scholar", "labelZh": "Google Scholar", "url": "https://scholar.google.com/citations?user=r6TXQZ0AAAAJ&hl=en" }
     ],
     "draft": false
   },
@@ -40,11 +53,16 @@
     "slug": "jin-zhu",
     "name": "Jin Zhu",
     "role": "Research Member · Assistant Professor",
+    "roleZh": "研究成员 · 助理教授",
     "affiliation": "School of Mathematics, University of Birmingham",
-    "bio": "Assistant Professor whose research focuses on large language models, reinforcement learning, and high-dimensional statistics, particularly computationally efficient methods with statistical guarantees.",
-    "interests": ["Large Language Models", "Reinforcement Learning", "High-dimensional Statistics"],
+    "affiliationZh": "伯明翰大学数学学院",
+    "bio": "Assistant Professor in the University of Birmingham's School of Mathematics. His research focuses on large language models, reinforcement learning, and AI-generated content detection, with an emphasis on high-dimensional methods and statistical guarantees.",
+    "bioZh": "伯明翰大学数学学院助理教授，研究聚焦大语言模型、强化学习与 AI 生成内容检测，并关注高维方法和统计保证。",
+    "interests": ["Large Language Models", "Reinforcement Learning", "AIGC Detection", "High-dimensional Statistics"],
+    "interestsZh": ["大语言模型", "强化学习", "AIGC 检测", "高维统计"],
     "links": [
-      { "label": "Personal website", "url": "https://mamba413.github.io/" }
+      { "label": "Personal website", "labelZh": "个人主页", "url": "https://mamba413.github.io/" },
+      { "label": "Google Scholar", "labelZh": "Google Scholar", "url": "https://scholar.google.com/citations?user=V84kQ3UAAAAJ&hl=en" }
     ],
     "draft": false
   },
@@ -52,11 +70,16 @@
     "slug": "shijin-gong",
     "name": "Shijin Gong",
     "role": "Research Member · PhD Student",
-    "affiliation": "University of Science and Technology of China",
-    "bio": "PhD student at the University of Science and Technology of China. Publications and current academic information are linked through OpenReview.",
-    "interests": [],
+    "roleZh": "研究成员 · 博士生",
+    "affiliation": "Department of Statistics and Finance, School of Management, University of Science and Technology of China",
+    "affiliationZh": "中国科学技术大学管理学院统计与金融系",
+    "bio": "PhD student in USTC's Department of Statistics and Finance. His work covers LLM policy optimisation, model averaging for conditional generative models, and statistical and ensemble methods for time-series forecasting.",
+    "bioZh": "中国科学技术大学管理学院统计与金融系博士生，研究大语言模型策略优化、条件生成模型的模型平均，以及时间序列预测中的统计与集成方法。",
+    "interests": ["LLM Policy Optimisation", "Model Averaging", "Time-Series Forecasting", "Ensemble Learning"],
+    "interestsZh": ["大语言模型策略优化", "模型平均", "时间序列预测", "集成学习"],
     "links": [
-      { "label": "OpenReview profile", "url": "https://openreview.net/profile?id=~Shijin_Gong1" }
+      { "label": "OpenReview profile", "labelZh": "OpenReview 主页", "url": "https://openreview.net/profile?id=~Shijin_Gong1" },
+      { "label": "Google Scholar", "labelZh": "Google Scholar", "url": "https://scholar.google.com/citations?user=gPNm44R8HswC&hl=en" }
     ],
     "draft": false
   },
@@ -64,11 +87,32 @@
     "slug": "erhan-xu",
     "name": "Erhan Xu",
     "role": "Research Member · PhD Student",
-    "affiliation": "Department of Statistics, LSE",
-    "bio": "PhD student at LSE working at the intersection of reinforcement learning and large language models, with a focus on statistically principled alignment and post-training of reasoning models.",
-    "interests": ["LLM Alignment", "Reasoning Models", "Reinforcement Learning", "Causal Inference"],
+    "roleZh": "研究成员 · 博士生",
+    "affiliation": "Department of Statistics, London School of Economics and Political Science",
+    "affiliationZh": "伦敦政治经济学院统计系",
+    "bio": "Fully funded PhD student in LSE's Department of Statistics. His research connects reinforcement learning, large language models, and economics and econometrics, with an emphasis on statistically principled alignment and reasoning-model post-training.",
+    "bioZh": "伦敦政治经济学院统计系全额资助博士生，研究连接强化学习、大语言模型与经济学及计量经济学，重点关注具有统计原理的模型对齐和推理模型后训练。",
+    "interests": ["Reinforcement Learning", "Large Language Models", "Economics and Econometrics", "LLM Alignment"],
+    "interestsZh": ["强化学习", "大语言模型", "经济学与计量经济学", "大模型对齐"],
     "links": [
-      { "label": "LSE profile", "url": "https://www.lse.ac.uk/people/erhan-xu" }
+      { "label": "Personal website", "labelZh": "个人主页", "url": "https://erhan-xu.github.io/" },
+      { "label": "Google Scholar", "labelZh": "Google Scholar", "url": "https://scholar.google.com/citations?user=ItOfce0AAAAJ&hl=en" }
+    ],
+    "draft": false
+  },
+  {
+    "slug": "pingfan-su",
+    "name": "Pingfan Su",
+    "role": "Research Member · PhD Student / Full-time Quant Summer Associate",
+    "roleZh": "研究成员 · 博士生 / 汇丰银行全职量化研究",
+    "affiliation": "Department of Statistics, London School of Economics and Political Science · HSBC",
+    "affiliationZh": "伦敦政治经济学院统计系 · 汇丰银行",
+    "bio": "PhD student in LSE's Department of Statistics. Since May 2026, he has worked full-time at HSBC in London as a Quant Summer Associate, focusing on eFX systematic trading and alpha-signal research.",
+    "bioZh": "伦敦政治经济学院统计系博士生；自 2026 年 5 月起在汇丰银行伦敦全职从事量化研究，聚焦 eFX 系统化交易与 Alpha 信号研究。",
+    "interests": ["Systematic Trading", "Alpha Signals", "eFX", "Quantitative Finance"],
+    "interestsZh": ["系统化交易", "Alpha 信号", "电子外汇", "量化金融"],
+    "links": [
+      { "label": "LinkedIn", "labelZh": "LinkedIn", "url": "https://www.linkedin.com/in/pingfan-su/" }
     ],
     "draft": false
   }

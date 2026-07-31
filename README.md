@@ -1,6 +1,8 @@
 # Stats-Powered AI Lab
 
-Independent English-language research portal for Stats-Powered AI Lab. This project is intentionally separate from `思达AI公司页面/`.
+Bilingual English–Chinese research portal for Stats-Powered AI Lab. This project is intentionally separate from `思达AI公司页面/`.
+
+The language control in the top-right corner switches all navigation and institutional copy. The selected language is stored in the browser and remains active across routes and reloads. Publication titles, authors, topics, and abstracts stay in their original English.
 
 ## Shareable draft
 
@@ -28,6 +30,8 @@ Portal records live in `src/content/` as typed JSON collections:
 - `people.json`
 - `resources.json`
 - `news.json`
+
+Research, people, resource, and news records pair their English fields with `*Zh` fields. Publications deliberately use one English source of truth and only their surrounding interface labels are translated. The content validator rejects a non-draft bilingual record when either language is incomplete.
 
 Draft records are visible in development and in the explicit content-preview build. Any future record marked as a draft is blocked by the normal production build.
 

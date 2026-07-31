@@ -1,5 +1,17 @@
 [
   {
+    "slug": "detecting-llm-generated-tokens",
+    "title": "Detecting LLM-Generated Tokens in Human--LLM Coauthored Text",
+    "authors": ["Yangjun Lu", "Hongyi Zhou", "Fabian Spill", "Kai Ye", "Chengchun Shi", "Jin Zhu"],
+    "year": 2026,
+    "abstract": "Human-AI collaborative writing calls for detectors that can localize LLM-authored passages rather than only classify entire documents. This work proposes a token-level procedure built on existing token detection scores. It reduces noise by smoothing neighboring scores and selects the local bandwidth with an adaptive Lepski-style rule, allowing the amount of smoothing to follow changes in authorship. The method is straightforward to implement and does not require token-level training labels. The paper analyzes the bias-variance trade-off and establishes favorable mean-squared-error behavior for recovering the latent authorship signal. Experiments on synthetic and realistic data show strong performance against diverse baselines, and the authors provide a public implementation.",
+    "topics": ["AIGC Detection", "Token-Level Detection", "Nonparametric Statistics", "Language Models"],
+    "arxivId": "2607.21458",
+    "pdfUrl": "https://arxiv.org/pdf/2607.21458",
+    "featured": true,
+    "draft": false
+  },
+  {
     "slug": "basis-single-rollout-llm-reasoning",
     "title": "BASIS: Batchwise Advantage Estimation from Single-Rollout Information Sharing for LLM Reasoning",
     "authors": ["Shijin Gong", "Erhan Xu", "Kai Ye", "Francesco Quinzan", "Giulia Livieri", "Chengchun Shi"],
