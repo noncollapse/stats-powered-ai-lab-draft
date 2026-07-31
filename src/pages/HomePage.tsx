@@ -117,7 +117,7 @@ export default function HomePage() {
         </div>
         <div className="home-split__content">
           <span className="section-kicker">[03] {pick(language, 'Open resources', '开放资源')}</span>
-          <h2>{pick(language, 'Research also lives between papers.', '研究也发生在论文之间。')}</h2>
+          <h2>{pick(language, 'Ideas grow through exchange.', '论文之外，思想在交流中生长。')}</h2>
           <p>{pick(
             language,
             'Our Blog unpacks ideas and methods; the Seminar Series creates space for talks, reading discussions, and work in progress.',
