@@ -2,6 +2,7 @@
   {
     "slug": "chengchun-shi",
     "name": "Chengchun Shi",
+    "image": "people/chengchun-shi.jpg",
     "role": "Lab Leader · Associate Professor",
     "roleZh": "实验室负责人 · 副教授",
     "affiliation": "Department of Statistics, London School of Economics and Political Science",
@@ -19,6 +20,7 @@
   {
     "slug": "kai-ye",
     "name": "Kai Ye",
+    "image": "people/kai-ye.jpg",
     "role": "Research Member · PhD Student",
     "roleZh": "研究成员 · 博士生",
     "affiliation": "Department of Statistics, London School of Economics and Political Science",
@@ -36,14 +38,15 @@
   {
     "slug": "hongyi-zhou",
     "name": "Hongyi Zhou",
+    "image": "people/hongyi-zhou.jpg",
     "role": "Research Member · Assistant Professor",
     "roleZh": "研究成员 · 助理教授",
     "affiliation": "School of Statistics and Data Science, Shanghai University of Finance and Economics",
     "affiliationZh": "上海财经大学统计与数据科学学院",
-    "bio": "Assistant Professor at Shanghai University of Finance and Economics. His research spans classical statistics, reinforcement learning, large language models, and world models.",
-    "bioZh": "上海财经大学助理教授，研究方向涵盖经典统计学、强化学习、大语言模型与世界模型。",
-    "interests": ["Classical Statistics", "Reinforcement Learning", "Large Language Models", "World Models"],
-    "interestsZh": ["经典统计学", "强化学习", "大语言模型", "世界模型"],
+    "bio": "Assistant Professor at Shanghai University of Finance and Economics. His research spans reinforcement learning, large language models, world models, and classical statistics.",
+    "bioZh": "上海财经大学助理教授，研究方向涵盖强化学习、大语言模型、世界模型与经典统计学。",
+    "interests": ["Reinforcement Learning", "Large Language Models", "World Models", "Classical Statistics"],
+    "interestsZh": ["强化学习", "大语言模型", "世界模型", "经典统计学"],
     "links": [
       { "label": "Google Scholar", "labelZh": "Google Scholar", "url": "https://scholar.google.com/citations?user=r6TXQZ0AAAAJ&hl=en" }
     ],
@@ -52,6 +55,7 @@
   {
     "slug": "jin-zhu",
     "name": "Jin Zhu",
+    "image": "people/jin-zhu.jpg",
     "role": "Research Member · Assistant Professor",
     "roleZh": "研究成员 · 助理教授",
     "affiliation": "School of Mathematics, University of Birmingham",
@@ -69,16 +73,16 @@
   {
     "slug": "shijin-gong",
     "name": "Shijin Gong",
+    "image": "people/shijin-gong.jpg",
     "role": "Research Member · PhD Student",
     "roleZh": "研究成员 · 博士生",
     "affiliation": "Department of Statistics and Finance, School of Management, University of Science and Technology of China",
     "affiliationZh": "中国科学技术大学管理学院统计与金融系",
-    "bio": "PhD student in USTC's Department of Statistics and Finance. His work covers LLM policy optimisation, model averaging for conditional generative models, and statistical and ensemble methods for time-series forecasting.",
-    "bioZh": "中国科学技术大学管理学院统计与金融系博士生，研究大语言模型策略优化、条件生成模型的模型平均，以及时间序列预测中的统计与集成方法。",
-    "interests": ["LLM Policy Optimisation", "Model Averaging", "Time-Series Forecasting", "Ensemble Learning"],
-    "interestsZh": ["大语言模型策略优化", "模型平均", "时间序列预测", "集成学习"],
+    "bio": "PhD student in the Department of Statistics and Finance at USTC's School of Management. His research spans large language models, deep generative models, model averaging, reinforcement learning, and time-series forecasting.",
+    "bioZh": "中国科学技术大学管理学院统计与金融系在读博士生，研究大语言模型、深度生成模型、模型平均、强化学习与时间序列预测。",
+    "interests": ["Large Language Models", "Deep Generative Models", "Model Averaging", "Reinforcement Learning", "Time-Series Forecasting"],
+    "interestsZh": ["大语言模型", "深度生成模型", "模型平均", "强化学习", "时间序列预测"],
     "links": [
-      { "label": "OpenReview profile", "labelZh": "OpenReview 主页", "url": "https://openreview.net/profile?id=~Shijin_Gong1" },
       { "label": "Google Scholar", "labelZh": "Google Scholar", "url": "https://scholar.google.com/citations?user=gPNm44R8HswC&hl=en" }
     ],
     "draft": false
@@ -86,6 +90,7 @@
   {
     "slug": "erhan-xu",
     "name": "Erhan Xu",
+    "image": "people/erhan-xu.jpg",
     "role": "Research Member · PhD Student",
     "roleZh": "研究成员 · 博士生",
     "affiliation": "Department of Statistics, London School of Economics and Political Science",
@@ -103,6 +108,7 @@
   {
     "slug": "pingfan-su",
     "name": "Pingfan Su",
+    "image": "people/pingfan-su.jpg",
     "role": "Research Member · PhD Student / Full-time Quant Summer Associate",
     "roleZh": "研究成员 · 博士生 / 汇丰银行全职量化研究",
     "affiliation": "Department of Statistics, London School of Economics and Political Science · HSBC",

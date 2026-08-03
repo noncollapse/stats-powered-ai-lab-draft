@@ -6,6 +6,7 @@ import Arrow from '../components/Arrow'
 import { pick, useLanguage } from '../i18n/LanguageContext'
 
 const initials = (name: string) => name.split(' ').map((part) => part[0]).join('').slice(0, 2)
+const assetUrl = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`
 
 export default function PeoplePage() {
   const { language } = useLanguage()
@@ -34,7 +35,10 @@ export default function PeoplePage() {
           <>
             {leader ? (
               <article className="leader-card">
-                <div className="leader-card__mark" aria-hidden="true"><span>{initials(leader.name)}</span><i /></div>
+                <div className={`leader-card__mark${leader.image ? ' leader-card__mark--portrait' : ''}`} aria-hidden="true">
+                  {leader.image ? <img src={assetUrl(leader.image)} alt="" decoding="async" /> : <span>{initials(leader.name)}</span>}
+                  <i />
+                </div>
                 <div className="leader-card__body">
                   <p className="eyebrow">{pick(language, leader.role, leader.roleZh)}</p>
                   <h2>{leader.name}</h2>
@@ -55,7 +59,9 @@ export default function PeoplePage() {
             <div className="people-grid people-grid--members">
               {members.map((person) => (
                 <article key={person.slug} className="person-card">
-                  <div className="person-card__image">{person.image ? <img src={person.image} alt="" /> : <span>{initials(person.name)}</span>}</div>
+                  <div className="person-card__image">
+                    {person.image ? <img src={assetUrl(person.image)} alt="" loading="lazy" decoding="async" /> : <span>{initials(person.name)}</span>}
+                  </div>
                   <p className="eyebrow">{pick(language, person.role, person.roleZh)}</p>
                   <h2>{person.name}</h2>
                   <p className="person-card__affiliation">{pick(language, person.affiliation, person.affiliationZh)}</p>
