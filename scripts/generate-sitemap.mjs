@@ -4,10 +4,12 @@ const allowDrafts = process.argv.includes('--allow-drafts')
 const baseUrl = (process.env.SITE_URL || 'http://127.0.0.1:4174').replace(/\/$/, '')
 const read = async (name) => JSON.parse(await readFile(new URL(`../src/content/${name}.json`, import.meta.url), 'utf8'))
 
-const [research, publications, news] = await Promise.all([
+const [research, publications, news, blog, seminars] = await Promise.all([
   read('research'),
   read('publications'),
   read('news'),
+  read('blog'),
+  read('seminars'),
 ])
 
 const routes = [
@@ -16,12 +18,16 @@ const routes = [
   '/publications',
   '/people',
   '/resources',
+  '/blog',
+  '/seminars',
   '/news',
   '/about',
   '/join',
   ...research.filter((item) => allowDrafts || !item.draft).map((item) => `/research/${item.slug}`),
   ...publications.filter((item) => allowDrafts || !item.draft).map((item) => `/publications/${item.slug}`),
   ...news.filter((item) => allowDrafts || !item.draft).map((item) => `/news/${item.slug}`),
+  ...blog.filter((item) => allowDrafts || !item.draft).map((item) => `/blog/${item.slug}`),
+  ...seminars.filter((item) => allowDrafts || !item.draft).map((item) => `/seminars/${item.slug}`),
 ]
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>

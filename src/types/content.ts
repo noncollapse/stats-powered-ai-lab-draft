@@ -72,3 +72,47 @@ export type NewsPost = {
   relatedProject?: string
   draft: boolean
 }
+
+export type BlogPost = {
+  slug: string
+  title: string
+  titleZh: string
+  date: string
+  summary: string
+  summaryZh: string
+  body: string[]
+  bodyZh: string[]
+  authors: string[]
+  tags: string[]
+  tagsZh: string[]
+  relatedPublications: string[]
+  readingMinutes: number
+  draft: boolean
+}
+
+export type Seminar = {
+  slug: string
+  title: string
+  titleZh: string
+  summary: string
+  summaryZh: string
+  abstract: string
+  abstractZh: string
+  speaker: string
+  speakerZh: string
+  speakerAffiliation: string
+  speakerAffiliationZh: string
+  startAt: string
+  endAt?: string
+  timezone: string
+  format: 'online' | 'offline' | 'hybrid'
+  location: string
+  locationZh: string
+  registrationUrl?: string
+  slidesUrl?: string
+  recordingUrl?: string
+  eventStatus: 'scheduled' | 'completed' | 'cancelled'
+  topics: string[]
+  topicsZh: string[]
+  draft: boolean
+}

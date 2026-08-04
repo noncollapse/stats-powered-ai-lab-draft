@@ -341,6 +341,74 @@ img { max-width: 100%; display: block; }
 .prose-copy { max-width: 760px; margin-left: auto; padding: 70px 0; border-top: 1px solid var(--line); }
 .prose-copy p { color: var(--brand); font-size: 18px; line-height: 1.8; }
 
+.content-index__bar { display: flex; justify-content: space-between; gap: 24px; padding: 0 0 18px; color: var(--dim); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; }
+.content-index__bar span:first-child { color: var(--brand-strong); }
+.blog-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.blog-card { min-width: 0; min-height: 540px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(10,14,12,.36); transition: background 200ms ease, transform 200ms ease; }
+.blog-card:hover { z-index: 1; background: linear-gradient(145deg, rgba(22,43,34,.72), rgba(8,12,10,.45)); transform: translateY(-2px); }
+.blog-card__link { min-height: 540px; display: flex; flex-direction: column; padding: 26px; }
+.blog-card__top { display: flex; justify-content: space-between; gap: 20px; color: var(--dim); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; }
+.blog-card__top span:first-child { color: var(--brand-strong); }
+.blog-card__signal { height: 74px; display: flex; align-items: center; gap: 8px; margin: 42px 0 34px; }
+.blog-card__signal i { width: 1px; display: block; background: var(--line-strong); }
+.blog-card__signal i:nth-child(1) { height: 30%; }
+.blog-card__signal i:nth-child(2) { height: 100%; background: var(--brand-strong); }
+.blog-card__signal i:nth-child(3) { height: 55%; }
+.blog-card__body .draft-badge { margin-bottom: 20px; }
+.blog-card h2 { max-width: 570px; margin: 0 0 20px; font-size: clamp(31px, 3vw, 47px); line-height: 1.04; letter-spacing: -.045em; font-weight: 520; }
+.blog-card__body > p { max-width: 570px; margin: 0 0 25px; color: var(--muted); font-size: 14px; line-height: 1.7; }
+.blog-card__foot { display: grid; grid-template-columns: 1fr auto 20px; gap: 18px; align-items: center; margin-top: auto; padding-top: 22px; border-top: 1px solid var(--line); color: var(--dim); font-size: 10px; letter-spacing: .04em; }
+.blog-card__foot svg { color: var(--brand-strong); transition: transform 180ms ease; }
+.blog-card:hover .blog-card__foot svg { transform: translateX(4px); }
+.article-byline { margin: 30px 0 0; color: var(--dim); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; }
+.article-copy section > p:first-of-type { color: var(--paper); font-size: 22px; line-height: 1.72; }
+.article-copy section > p + p { margin-top: 25px; }
+.article-related { padding-top: 10px; border-top: 1px solid var(--line); }
+.article-related__list { margin-top: 24px; border-top: 1px solid var(--line); }
+.article-related__list a { display: grid; grid-template-columns: 62px 1fr 20px; gap: 20px; align-items: center; padding: 20px 0; border-bottom: 1px solid var(--line); }
+.article-related__list a > span { color: var(--brand-strong); font-size: 10px; }
+.article-related__list strong { font-size: 15px; line-height: 1.45; font-weight: 500; }
+.article-related__list svg { color: var(--brand-strong); transition: transform 180ms ease; }
+.article-related__list a:hover svg { transform: translateX(4px); }
+
+.seminar-programme { padding-block: clamp(80px, 10vw, 150px); }
+.programme-section + .programme-section { margin-top: clamp(100px, 12vw, 170px); }
+.programme-section__heading { display: grid; grid-template-columns: 82px 1fr auto; gap: 25px; align-items: end; margin-bottom: 38px; }
+.programme-section__heading > span { color: var(--brand-strong); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; }
+.programme-section__heading > span:last-child { color: var(--dim); }
+.programme-section__heading p { margin: 0 0 12px; }
+.programme-section__heading h2 { margin: 0; font-size: clamp(40px, 4.8vw, 70px); line-height: .98; letter-spacing: -.05em; font-weight: 520; }
+.seminar-list { border-top: 1px solid var(--line); }
+.seminar-card { border-bottom: 1px solid var(--line); background: rgba(10,14,12,.18); transition: background 180ms ease; }
+.seminar-card:hover { background: rgba(18,34,27,.55); }
+.seminar-card__link { display: grid; grid-template-columns: 112px minmax(0, 1fr) 230px 20px; gap: 30px; align-items: center; min-height: 330px; padding: 35px 0; }
+.seminar-card__date { align-self: stretch; display: flex; flex-direction: column; justify-content: flex-start; padding-right: 26px; border-right: 1px solid var(--line); }
+.seminar-card__date strong { color: var(--paper); font-size: 60px; line-height: .9; letter-spacing: -.06em; font-weight: 480; }
+.seminar-card__date span { margin-top: 11px; color: var(--brand-strong); font-size: 11px; letter-spacing: .1em; }
+.seminar-card__date small { margin-top: 5px; color: var(--dim); font-size: 10px; }
+.seminar-card__status { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-bottom: 22px; color: var(--dim); font-size: 9px; letter-spacing: .07em; text-transform: uppercase; }
+.seminar-card__status > span:first-child { color: var(--brand-strong); }
+.seminar-card__main h3 { max-width: 720px; margin: 0 0 17px; font-size: clamp(29px, 3vw, 45px); line-height: 1.04; letter-spacing: -.04em; font-weight: 520; }
+.seminar-card__main > p { max-width: 720px; margin: 0 0 23px; color: var(--muted); font-size: 14px; line-height: 1.65; }
+.seminar-card__speaker { align-self: stretch; display: flex; flex-direction: column; justify-content: center; padding-left: 24px; border-left: 1px solid var(--line); }
+.seminar-card__speaker > span { color: var(--brand-strong); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; }
+.seminar-card__speaker strong { margin: 18px 0 8px; font-size: 17px; line-height: 1.25; font-weight: 520; }
+.seminar-card__speaker small { color: var(--dim); font-size: 11px; line-height: 1.5; }
+.seminar-card__link > svg { color: var(--brand-strong); transition: transform 180ms ease; }
+.seminar-card:hover .seminar-card__link > svg { transform: translateX(4px); }
+.seminar-card--archive { background: rgba(5,7,6,.15); }
+.seminar-card--archive .seminar-card__date strong { color: var(--brand); }
+.seminar-card--archive .seminar-card__main h3 { color: var(--brand); }
+.event-facts dl { margin: 25px 0 0; }
+.event-facts dl > div { padding: 16px 0; border-bottom: 1px solid var(--line); }
+.event-facts dt { margin-bottom: 8px; color: var(--dim); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; }
+.event-facts dd { margin: 0; color: var(--brand); font-size: 13px; line-height: 1.55; }
+.speaker-panel { padding: 36px; border: 1px solid var(--line); background: linear-gradient(135deg, rgba(30,111,81,.13), rgba(5,7,6,.18)); }
+.speaker-panel h2 { margin-top: 45px; }
+.speaker-panel > p { color: var(--muted) !important; font-size: 14px !important; }
+.event-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+.event-forthcoming { width: 100%; margin: 0 !important; padding: 22px; border: 1px solid var(--line); color: var(--muted) !important; background: rgba(10,14,12,.48); font-size: 13px !important; line-height: 1.65 !important; }
+
 .about-statement { display: grid; grid-template-columns: 22% 1fr; gap: 50px; padding-block: 120px; }
 .about-statement h2 { max-width: 850px; margin: 0 0 35px; font-size: clamp(42px, 5vw, 72px); line-height: 1.03; letter-spacing: -.05em; font-weight: 520; }
 .about-statement p { max-width: 820px; color: var(--brand); font-size: 18px; line-height: 1.75; }
@@ -406,6 +474,11 @@ img { max-width: 100%; display: block; }
 .people-section-label,
 .resource-hub__top,
 .resource-hub__status,
+.content-index__bar,
+.blog-card__top,
+.blog-card__foot,
+.seminar-card__status,
+.programme-section__heading > span,
 .site-footer__links > div > span:first-child,
 .site-footer__bottom {
   font-family: Inter, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
@@ -489,6 +562,11 @@ img { max-width: 100%; display: block; }
   .resource-hubs { grid-template-columns: 1fr; }
   .release-standard { grid-template-columns: 1fr; }
   .news-list article { grid-template-columns: 1fr; gap: 14px; }
+  .blog-grid { grid-template-columns: 1fr; }
+  .seminar-card__link { grid-template-columns: 96px minmax(0, 1fr) 20px; gap: 22px; }
+  .seminar-card__speaker { grid-column: 2; align-self: auto; min-height: 90px; padding: 22px 0 0; border-top: 1px solid var(--line); border-left: 0; }
+  .seminar-card__speaker strong { margin-top: 12px; }
+  .seminar-card__link > svg { grid-column: 3; grid-row: 1 / span 2; }
   .about-statement { grid-template-columns: 1fr; }
   .principles-grid { grid-template-columns: 1fr; }
   .join-layout { grid-template-columns: 1fr; }
@@ -541,6 +619,25 @@ img { max-width: 100%; display: block; }
   .people-section-label span:last-child { display: none; }
   .resource-hub { min-height: 590px; padding: 20px; }
   .resource-hub__visual { height: 235px; }
+  .content-index__bar span:last-child { display: none; }
+  .blog-card, .blog-card__link { min-height: 500px; }
+  .blog-card__link { padding: 20px; }
+  .blog-card__signal { margin-block: 32px 26px; }
+  .blog-card h2 { font-size: 34px; }
+  .blog-card__foot { grid-template-columns: 1fr 20px; }
+  .blog-card__foot span:nth-child(2) { display: none; }
+  .programme-section__heading { grid-template-columns: 40px 1fr; align-items: start; }
+  .programme-section__heading > span:last-child { display: none; }
+  .programme-section__heading h2 { font-size: 43px; }
+  .seminar-card__link { grid-template-columns: 1fr 20px; min-height: 0; padding: 28px 0; }
+  .seminar-card__date { grid-column: 1 / -1; align-self: auto; flex-direction: row; align-items: baseline; gap: 10px; padding: 0 0 20px; border-right: 0; border-bottom: 1px solid var(--line); }
+  .seminar-card__date strong { font-size: 42px; }
+  .seminar-card__date span, .seminar-card__date small { margin-top: 0; }
+  .seminar-card__main { grid-column: 1 / -1; }
+  .seminar-card__main h3 { font-size: 32px; }
+  .seminar-card__speaker { grid-column: 1 / -1; }
+  .seminar-card__link > svg { display: none; }
+  .speaker-panel { padding: 25px; }
   .principles-grid h2 { margin-top: 70px; }
   .join-layout { gap: 50px; }
   .join-layout__main > article { grid-template-columns: 38px 1fr; }

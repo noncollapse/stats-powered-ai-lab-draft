@@ -1,7 +1,7 @@
 import { readFile } from 'node:fs/promises'
 
 const allowDrafts = process.argv.includes('--allow-drafts')
-const collections = ['publications', 'research', 'people', 'resources', 'news']
+const collections = ['publications', 'research', 'people', 'resources', 'news', 'blog', 'seminars']
 const errors = []
 
 for (const collection of collections) {
@@ -70,6 +70,27 @@ for (const collection of collections) {
         if (!item[field]) errors.push(`${location} needs bilingual field "${field}".`)
       }
       if (!Array.isArray(item.bodyZh)) errors.push(`${location} needs a bilingual article body.`)
+    }
+
+    if (collection === 'blog' && !item.draft) {
+      for (const field of ['titleZh', 'summaryZh']) {
+        if (!item[field]) errors.push(`${location} needs bilingual field "${field}".`)
+      }
+      if (!Array.isArray(item.body) || item.body.length === 0) errors.push(`${location} needs an article body.`)
+      if (!Array.isArray(item.bodyZh) || item.bodyZh.length === 0) errors.push(`${location} needs a bilingual article body.`)
+      if (!Array.isArray(item.authors) || item.authors.length === 0) errors.push(`${location} needs at least one author.`)
+      if (!Array.isArray(item.tags) || !Array.isArray(item.tagsZh)) errors.push(`${location} needs bilingual tags.`)
+      if (!item.date) errors.push(`${location} needs a publication date.`)
+      if (!Number.isInteger(item.readingMinutes)) errors.push(`${location} needs an integer reading time.`)
+    }
+
+    if (collection === 'seminars' && !item.draft) {
+      for (const field of ['titleZh', 'summaryZh', 'abstractZh', 'speaker', 'speakerZh', 'speakerAffiliation', 'speakerAffiliationZh', 'startAt', 'timezone', 'format', 'locationZh', 'eventStatus']) {
+        if (!item[field]) errors.push(`${location} needs field "${field}".`)
+      }
+      if (!Array.isArray(item.topics) || !Array.isArray(item.topicsZh)) errors.push(`${location} needs bilingual topics.`)
+      if (!['online', 'offline', 'hybrid'].includes(item.format)) errors.push(`${location} has an invalid seminar format.`)
+      if (!['scheduled', 'completed', 'cancelled'].includes(item.eventStatus)) errors.push(`${location} has an invalid event status.`)
     }
   }
 }

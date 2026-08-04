@@ -30,8 +30,12 @@ Portal records live in `src/content/` as typed JSON collections:
 - `people.json`
 - `resources.json`
 - `news.json`
+- `blog.json`
+- `seminars.json`
 
 Research, people, resource, and news records pair their English fields with `*Zh` fields. Publications deliberately use one English source of truth and only their surrounding interface labels are translated. The content validator rejects a non-draft bilingual record when either language is incomplete.
+
+`blog.json` and `seminars.json` are intentionally empty until verified material is available. Their list routes, detail routes, content types, validation, sitemap support, and empty states remain in place for future records or a CMS integration.
 
 Draft records are visible in development and in the explicit content-preview build. Any future record marked as a draft is blocked by the normal production build.
 
@@ -63,6 +67,8 @@ The build generates `dist/sitemap.xml` and `dist/robots.txt`. Set `SITE_URL` to 
 - `/publications` and `/publications/:slug`
 - `/people`
 - `/resources`
+- `/blog` and `/blog/:slug`
+- `/seminars` and `/seminars/:slug`
 - `/news` and `/news/:slug`
 - `/about`
 - `/join`

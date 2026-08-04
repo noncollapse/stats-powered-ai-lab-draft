@@ -107,6 +107,8 @@ export default function Layout() {
               <Link to="/research">{pick(language, 'Research', '研究')}</Link>
               <Link to="/publications">{pick(language, 'Paper Bank', '论文库')}</Link>
               <Link to="/resources">{pick(language, 'Resources', '资源')}</Link>
+              <Link to="/blog">{pick(language, 'Blog', '博客')}</Link>
+              <Link to="/seminars">{pick(language, 'Seminars', '研讨会')}</Link>
             </div>
             <div>
               <span>{pick(language, 'Lab', '实验室')}</span>

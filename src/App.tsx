@@ -1,6 +1,8 @@
 import { Route, Routes } from 'react-router'
 import Layout from './components/Layout'
 import AboutPage from './pages/AboutPage'
+import BlogDetailPage from './pages/BlogDetailPage'
+import BlogPage from './pages/BlogPage'
 import HomePage from './pages/HomePage'
 import JoinPage from './pages/JoinPage'
 import NewsDetailPage from './pages/NewsDetailPage'
@@ -12,6 +14,8 @@ import PublicationsPage from './pages/PublicationsPage'
 import ResearchDetailPage from './pages/ResearchDetailPage'
 import ResearchPage from './pages/ResearchPage'
 import ResourcesPage from './pages/ResourcesPage'
+import SeminarDetailPage from './pages/SeminarDetailPage'
+import SeminarsPage from './pages/SeminarsPage'
 
 export default function App() {
   return (
@@ -24,6 +28,10 @@ export default function App() {
         <Route path="publications/:slug" element={<PublicationDetailPage />} />
         <Route path="people" element={<PeoplePage />} />
         <Route path="resources" element={<ResourcesPage />} />
+        <Route path="blog" element={<BlogPage />} />
+        <Route path="blog/:slug" element={<BlogDetailPage />} />
+        <Route path="seminars" element={<SeminarsPage />} />
+        <Route path="seminars/:slug" element={<SeminarDetailPage />} />
         <Route path="news" element={<NewsPage />} />
         <Route path="news/:slug" element={<NewsDetailPage />} />
         <Route path="about" element={<AboutPage />} />

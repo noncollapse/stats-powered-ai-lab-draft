@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import EmptyState from '../components/EmptyState'
 import PageHero from '../components/PageHero'
 import Seo from '../components/Seo'
@@ -38,7 +39,7 @@ export default function ResourcesPage() {
                   <h2>{pick(language, resource.title, resource.titleZh)}</h2>
                   <p>{pick(language, resource.summary, resource.summaryZh)}</p>
                   {resource.url
-                    ? <a className="text-link" href={resource.url}>{pick(language, `Open ${resource.type.toLowerCase()}`, `打开${resource.typeZh}`)} <Arrow /></a>
+                    ? <Link className="text-link" to={resource.url}>{pick(language, `Open ${resource.type.toLowerCase()}`, `打开${resource.typeZh}`)} <Arrow /></Link>
                     : <span className="resource-hub__status">{pick(language, 'Programme forthcoming', '内容即将上线')}</span>}
                 </div>
               </article>
