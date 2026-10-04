@@ -153,5 +153,20 @@
     "interestsZh": ["统计推断", "大语言模型", "强化学习"],
     "links": [],
     "draft": false
+  },
+  {
+    "slug": "han-li",
+    "name": "Han Li",
+    "image": "people/han-li.jpg",
+    "role": "Research Member · PhD Student",
+    "roleZh": "研究成员 · 博士生",
+    "affiliation": "Department of Statistics, London School of Economics and Political Science",
+    "affiliationZh": "伦敦政治经济学院统计系",
+    "bio": "PhD student in Statistics at the London School of Economics and Political Science. His research interests include large language model reasoning and reinforcement learning. He holds a BA and MPhil in Economics from the University of Cambridge and an MSc in Statistics (Financial Statistics) from LSE. His broader interests lie at the intersection of statistics, machine learning, and foundation models.",
+    "bioZh": "伦敦政治经济学院统计学博士生，研究兴趣包括大语言模型推理与强化学习。他拥有剑桥大学经济学学士和硕士学位，以及伦敦政治经济学院金融统计学硕士学位；整体研究兴趣集中在统计学、机器学习与基础模型的交叉领域。",
+    "interests": ["LLM Reasoning", "Reinforcement Learning", "Statistics", "Machine Learning", "Foundation Models"],
+    "interestsZh": ["大语言模型推理", "强化学习", "统计学", "机器学习", "基础模型"],
+    "links": [],
+    "draft": false
   }
 ]
