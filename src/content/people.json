@@ -30,7 +30,7 @@
     "interests": ["Artificial Intelligence", "Large Language Models", "Computer Vision", "Reinforcement Learning"],
     "interestsZh": ["人工智能", "大语言模型", "计算机视觉", "强化学习"],
     "links": [
-      { "label": "Personal website", "labelZh": "个人主页", "url": "https://noncollapse.github.io/" },
+      { "label": "Personal website", "labelZh": "个人主页", "url": "https://kaiye.noncollapse.com/" },
       { "label": "Google Scholar", "labelZh": "Google Scholar", "url": "https://scholar.google.com/citations?user=a7G8Yo8AAAAJ&hl=en" }
     ],
     "draft": false
